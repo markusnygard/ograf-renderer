@@ -5,6 +5,8 @@ SPDX-License-Identifier: CC-BY-4.0
 
 # OGraf renderer
 
+> **This is a server, not a desktop app or an editing plug-in.** It runs in Docker or on a Linux server, and other systems send it render jobs over HTTP. It was made for the Open Live project. Looking for OGraf graphics in Avid Media Composer, Adobe Premiere Pro or DaVinci Resolve? Those are Yle's OGraf NLE tools, a separate project with its own installers (not public yet). They don't use this renderer.
+
 A headless renderer for [EBU OGraf](https://ograf.ebu.io) graphics. Give it a graphic, its data, a format and a length, and you get a frame-accurate, transparent PNG sequence. It can also make a ProRes 4444 or VP9 WebM file with alpha. Run it as a command-line tool, or as an HTTP service in a container.
 
 It also has a **web editor** for applications: an "Import OGraf" command opens it, the user picks a graphic, fills it in and previews it, and the render runs in the background. A signed webhook tells the application when it is done ([docs/editor.md](docs/editor.md)).
